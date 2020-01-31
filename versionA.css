@@ -1,0 +1,81 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size: large;
+}
+
+header {
+	text-align: center;
+	padding: 3em;
+	background-image: url('header-bg.jpg');
+	background-size:  cover;
+	background-position: center;
+	color: white;
+}
+
+section {
+	margin: 5em;
+	padding: 2em;
+	border-radius: 10px;
+}
+
+#about {
+	background: lightgreen;
+}
+
+#courses {
+	background: lightcoral;
+}
+
+#links {
+	background: lightpink;
+}
+
+#rwd {
+	background: lightyellow;
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	width: 20%;
+}
+
+nav a:link {
+	color: grey;
+	text-decoration: none;
+}
+
+nav a:hover {
+	font-weight: bold;
+	color: black;
+}
+
+#links a:hover {
+    font-style: italic;
+    color: purple;
+}
+
+#courses table {
+	border-collapse: collapse;
+	width: 80%;
+	text-align: center;
+	margin: 2em;
+}
+
+@media screen and (max-width: 499px) {
+    body {
+        font-size: small;
+    }
+    section {
+        margin: 0em;
+        padding: 0em;
+        border-radius: 0px;
+    }
+}

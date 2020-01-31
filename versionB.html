@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Tsui Lok In @ cse</title>
+	<meta name="description" content="Tsui Lok In's website">
+	<meta name="author" content="Tsui Lok In">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="versionB.js"></script>
+</head>
+
+
+<style>
+    @media (min-width: 500px) {
+        body{font-size: large;}
+        section,nav{
+            margin: 2em;
+            padding: 2em;
+            border-radius: 10px;
+        }
+    }
+</style>
+
+
+<style>
+    @media (max-width: 499px) {
+        body{font-size: small;}
+        section,nav{
+            margin: 0em;
+            padding: 0em;
+            border-radius: 0px;
+        }
+    }
+</style>
+
+
+<body>
+    <article>
+        <div class="container">
+                <div class="row" style="background:transparent url('header-bg.jpg') no-repeat center center /cover">
+                    <div class="col"></div>
+                    <div id ="header-bg" class="col-sm-12 col-md-9 col-xl-6 text-center text-white">        
+                        <header>
+                        <h1>I'm <span>Tsui Lok In</span></h1>
+                        <h4>Computer Science &amp; Engineering</h2>
+                        </header>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            
+
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#courses">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#links">Links</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#rwd">Response Web</a>
+                  </li>
+                  <li id="special" class="nav-item">
+                    <a class="nav-link text-danger" href="#">Special!</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </nav>
+
+        
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6" id="buttongroup" style="display:none">
+                <div class="btn-group">
+                    <button type="button" id="t1" class="btn btn-secondary">Task 1: Align</button>
+                    <button type="button" id="t2" class="btn btn-secondary">Task 2: New Hobby</button>
+                    <button type="button" id="t3" class="btn btn-secondary">Task 3: Scroll</button>
+                    <button type="button" id="t4" class="btn btn-secondary">Task 4: Bonus</button>
+                  </div>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div id="bar" class="progress sticky-top my-5"  style="display:none">
+            <div id="dynamic" class="progress-bar bg-success progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6 text-center my-3" id="bg" style="display:none">
+                <ul id="change_image" style="list-style: none;">
+                    <li id ="1" style="display:none"><img src="p1.jpg"></li> 
+                    <li id ="2" style="display:none"><img src="p2.jpg"></li>
+                    <li id ="3" style="display:none"><img src="p3.jpg"></li>
+                </ul>
+            </div>
+            <div class="col"></div>
+        </div>
+
+
+        <section id="about" class="bg-primary">
+            <h2>About Me</h2>
+            <p>
+            <picture>
+                <source srcset="icon-small.jpg" media="(max-width:499px)">
+                <source srcset="icon.jpg">
+                <img src="icon.jpg" alt="coffee">
+            </picture>
+            <br>
+            Hi there! I'm a student in the Department of Computer Science and Engineering, CUHK. It's very nice to meet you all.</p>
+            <h3>My hobbies</h3>
+            <div id="hobbies" class="flex-container">
+                <div>Programming</div>
+                <div>Software Desgin</div>
+                <div>Web Desgin</div>
+            </div>
+        </section>
+
+
+        <section id="courses" class="bg-secondary">
+            <h2>My Courses</h2>
+            <table class="table">
+                <tr>
+                    <th>Course code</th>
+                    <th>Contents</th>
+                </tr>
+                <tr>
+                    <td>CSCI2720</td>
+                    <td>Building Web Apps</td>
+                </tr>
+                <tr>
+                    <td>CSCI5050</td>
+                    <td>Bioinformatics and Computational Biology</td>
+                </tr>
+                <tr>
+                    <td>CSCI4999</td>
+                    <td>Final Year Project</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section id="links" class="bg-warning">
+            <h2>Interesting Links</h2>
+            <ul class="list-group-item list-group-item-action">
+                <li class="list-group-item list-group-item-action list-group-item-primary"><a href="http://blackboard.cuhk.edu.hk" target="_blank">Blackboard</a></li>
+                <li class="list-group-item list-group-item-action list-group-item-secondary"><a href="http://www.cse.cuhk.edu.hk" target="_blank">CSE Dept</a></li>
+                <li class="list-group-item list-group-item-action list-group-item-success"><a href="http://www.cuhk.edu.hk" target="_blank">CUHK</a></li>
+            </ul>
+        </section>
+
+
+        <section id="rwd" class="bg-success">
+            <h2>Response Web Design</h2>
+            <p>Responsive web design</p>
+            <ul>
+                <li>Auto change About me image, the image will change from large one (one heart latte art) to small one (two heart latte art) when device screen is smaller than 500px</li>
+                <li>Auto change font size, the font size will change from large one to small one in body part of html when device screen is smaller than 500px</li>
+                <li>Auto eliminate margin and padding, the margin and padding will be eliminated when device screen is smaller than 500px</li>
+                <li>Header image column (using Bootstrap column layout) is Responsive.</li>
+            </ul>
+        </section>
+
+
+        <footer>
+            This website was built on <time>2020-01-30</time>. <b>&copy; Lok In Tsui</b>
+        </footer>
+
+    </div>
+    </article>      
+</body>
+
+
+</html>
